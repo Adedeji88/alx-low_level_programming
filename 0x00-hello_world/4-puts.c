@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/*main is the entry point of the program*/
+/**
+ *main is the entry point of the program
+ */
+
 int main(void)
 
 {
