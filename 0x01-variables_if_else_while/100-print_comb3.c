@@ -7,23 +7,22 @@
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int i;
+	int j;
 
-	for (tens = '0'; tens <= '9'; tens++) /*prints tens place*/
+	for (i = 10; i <= 19; i++)
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (j = 10; j <= 19; j++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens == '9' && ones == '9')) /*skip comma at end*/
+			putchar((i % 10) + '0');
+			putchar((j % 10) + '0');
+			if (i != 19 ||  j != 19)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
-	putchar('\n');
-
+	putchar(' ');
 	return (0);
 }
