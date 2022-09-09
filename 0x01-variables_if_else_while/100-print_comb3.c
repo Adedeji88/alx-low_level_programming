@@ -7,24 +7,25 @@
 
 int main(void)
 {
-	int digit1, digit2;
+	int a, b;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+	for (a = 48; a < 58; a += 1)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (b = 48; b < 58; b += 1)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 9 && digit2 == 9)
-				continue;
-
+			if (a != b && a < b)
+			{
+				putchar(a);
+				putchar(b);
+			if (a == 56 && b == 57)
+			{
+				break;
+			}
 			putchar(',');
-			putchar(' ');
+			putchar(',');
+			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
