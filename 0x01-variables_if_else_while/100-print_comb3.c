@@ -7,22 +7,24 @@
 
 int main(void)
 {
-	int i;
-	int j;
+	int digit1, digit2;
 
-	for (i = 10; i <= 19; i++)
+	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		for (j = 10; j <= 19; j++)
+		for (digit2 = 0; digit2 < 10; digit2++)
 		{
-			putchar((i % 10) + '0');
-			putchar((j % 10) + '0');
-			if (i != 19 ||  j != 19)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 9 && digit2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	putchar(' ');
+
+	putchar('\n');
+
 	return (0);
 }
