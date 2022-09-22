@@ -7,11 +7,11 @@
 int _indexOf(char a)
 {
 	int i;
-	char capArr[13] = {'\n', '\t', ' ', '.', ',', ';', ',', '!', '?', '(', ')', '{', '}'};
+	char capAr[13] = {' ', '.', ';', ',', '!', '?', '(', ')', '{', '}'};
 
 	for (i = 0; i < 13; i++)
 	{
-		if (capArr[i] == a)
+		if (capAr[i] == a)
 			return (1);
 	}
 	return (0);
