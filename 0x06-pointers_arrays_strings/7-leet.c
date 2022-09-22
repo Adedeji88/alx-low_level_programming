@@ -1,26 +1,29 @@
 #include "main.h"
 /**
- * leet - leet
- * @s: str
- *
- * Return: character value
+ * cap_string - capitalize first letter
+ * @s: str to manipulate
+ * Return: str
  */
-char *leet(char *s)
+char *cap_string(char *s)
 {
-	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
-	int i;
-	int j;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+	i++;
+
+	while (s[i] != '\0')
 	{
-		for (j = 0; alphaArr[j] != '\0'; j++)
-		{
-			if (s[i] == alphaArr[j])
-			{
-				s[i] = alphaArr[j + 1];
-				break;
-			}
-		}
+
+		if ((s[i] >= 'a' && s[i] <= 'z')
+			&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+			s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+			s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+			|| s[i - 1] == '\n'))
+			s[i] = s[i] - 'a' + 'A';
+		i++;
 	}
+	
 	return (s);
 }
