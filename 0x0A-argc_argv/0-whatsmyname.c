@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#define UNUSED(x) (void)(x)
 
 /**
  * main - print name of program
@@ -10,8 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 0)
-		printf("%s\n", argv[0]);
+	UNUSED(argc);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
