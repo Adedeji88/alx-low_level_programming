@@ -14,6 +14,10 @@ A function that allocates memory for an array, using malloc
 
 A function that creates an array of integers
 
-a function that reallocates a memory block using malloc and free
+100-realloc.c
 
-a program that multiply two positive numbers
+A function that reallocates a memory block using malloc and free
+
+101-mul.c
+
+A program that multiply two positive numbers
