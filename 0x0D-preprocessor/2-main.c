@@ -1,4 +1,13 @@
-#ifndef _FILE_NAME_H_
-#define _FILE_NAME_H_
+#include <stdio.h>
 
-#endif 
+/**
+ * main - prints current filename to std output
+ *
+ * Return: 0 on success
+ */
+
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
