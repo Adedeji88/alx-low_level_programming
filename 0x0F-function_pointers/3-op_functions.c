@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
+#include "calc.h"
 /**
  * op_add - adds 5 functions
  * @a: int a
