@@ -3,3 +3,4 @@ Files starting with:
 1. a function that creates a file with content
 2. a function that appends a text at the end of a file
 3. a program that copies the content of a file to another file
+4. a program that displays the information contained in the ELF header at the start of an ELF file
